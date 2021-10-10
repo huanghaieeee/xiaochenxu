@@ -1,0 +1,11 @@
+<view wx:for="{{person}}" wx:key="index">
+{{index}}:{{item}}</view>
+<button class="cu-btn round bg-green" bindtap="addpersonbyData">使用this.data添加人员</button>
+<button class="cu-btn round bg-green" bindtap="addpersonbySetData">使用this.setData添加人员</button>
+
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+<view slot="backText"> 返回 </view>
+<view slot="content">导航栏</view>
+</cu-custom>
+<button bindtap='http'>http </button>
+
